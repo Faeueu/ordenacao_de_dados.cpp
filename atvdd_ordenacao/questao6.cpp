@@ -2,13 +2,11 @@
 using namespace std;
 
 void bubbleSort(int vetor[], int n){
-    for(int i=0; i<n-1; i++){
-        for(int j =0; j<n-i; j++){
-            if(vetor[j] > vetor[j+1]){
+    for(int ult=0; ult<n-1; ult++){
+        for(int i=0; i<n-ult-1; i++){
+            if(vetor[i] > vetor[i+1]){
 
-                int aux = vetor[j];
-                vetor[j] = vetor[j+1];
-                vetor[j+1] = aux;
+                swap (vetor[i], vetor[i+1]);
             }
         }
     }
@@ -17,21 +15,21 @@ void bubbleSort(int vetor[], int n){
 int main()
 {
     int tabela[] = {10, 8, 7, 0};
-    int tamanho = sizeof(tabela) / tabela[0];
+    int tamanho = sizeof(tabela) / sizeof(tabela[0]);
 
     cout << "Tabela original: ";
-    for(int i=0; i<tamanho; i++){
-        cout << tabela[i] << " ";
+    for(int ult=0; ult<tamanho; ult++){
+        cout << tabela[ult] << " ";
     }
     cout << endl;
 
     bubbleSort(tabela, tamanho);
 
     cout << "Tabela em ordem crescente: ";
-    for(int i=0; i<tamanho; i++){
-        cout << tabela[i] << " " << endl;
+    for(int ult=0; ult<tamanho; ult++){
+        cout << tabela[ult] << " ";
     }
-    cout << "Sera feita 6 comparacoes e 6 trocas para a ordenacao da tabela";
+    cout << endl;
 
     return 0;
 }
