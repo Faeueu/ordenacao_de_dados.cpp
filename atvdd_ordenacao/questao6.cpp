@@ -5,7 +5,6 @@ void bubbleSort(int vetor[], int n){
     for(int ult=0; ult<n-1; ult++){
         for(int i=0; i<n-ult-1; i++){
             if(vetor[i] > vetor[i+1]){
-
                 swap (vetor[i], vetor[i+1]);
             }
         }

@@ -23,7 +23,7 @@ int main()
     int quantidade;
     cout << "Digite a quantidade de nomes: ";
     cin >> quantidade;
-    cin.ignore();
+    
 
     string nomes[quantidade];
     
