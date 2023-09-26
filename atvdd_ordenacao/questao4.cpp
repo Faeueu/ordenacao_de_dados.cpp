@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void merge(string &str, int esquerda, int meio, int direita){
+void merge(string str, int esquerda, int meio, int direita){
     int i,j,k;
     int n1 = meio - esquerda +1;
     int n2 = direita - meio;

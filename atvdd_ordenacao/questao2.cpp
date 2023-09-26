@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void insetionSort(string &str){
+void insetionSort(string str){
     int n = str.length();
 
     for(int i=1; i<n; i++){

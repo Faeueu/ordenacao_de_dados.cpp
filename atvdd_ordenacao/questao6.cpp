@@ -29,6 +29,7 @@ int main()
         cout << tabela[ult] << " ";
     }
     cout << endl;
+    cout << "Sera feita 6 comparacoes e 6 trocas, alternativa C"; 
 
     return 0;
 }

@@ -31,6 +31,7 @@ int main()
         cout << vetor[i] << " ";
     }
     cout << endl; 
+    cout << "Metodo de isercao, alternativa B";
 
     return 0;
 }
